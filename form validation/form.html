@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="website icon"
+      type="png"
+      href="https://media.istockphoto.com/id/1224774389/vector/user-profile-or-my-account-avatar-login-icon-with-man-male-face-smile-symbol-flat-vector.jpg?s=170667a&w=0&k=20&c=gm8BmPyZ3ytVUz8vhJ3vR3O-3Ou84z7zsHiZa3kjbd0="
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <!-- form section -->
+
+    <section>
+      <div class="loginid">
+        <fieldset>
+          <legend>Login<i class="fa fa-user-secret"></i></legend>
+          <form id="form" class="form" >
+            <!-- user section -->
+
+            <div class="input_control">
+              <label for="name">Username</label>
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="user"
+                id="Username"
+                placeholder="Username"
+              />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <span>Error message</span>
+            </div>
+
+            <!-- email section -->
+
+            <div class="input_control">
+              <label for="mail">Email</label>
+              <i class="fas fa-envelope"></i>
+
+              <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="abc@gmail.com"
+              />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <span>Error message</span>
+            </div>
+
+            <!-- paswd section -->
+
+            <div class="input_control">
+              <label for="paswd">Password</label>
+              <i class="fas fa-lock"></i>
+              <input type="password" name="paswd" id="pswd" placeholder="abc@123" />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <span>Error message</span>
+            </div>
+
+            <!-- dob section -->
+
+            <div class="input_control">
+              <label for="dob">DOB</label>
+              <!-- <i class="fa-regular fa-calendar"></i> -->
+              <input type="date" name="date" id="dob" placeholder="dd/mm/yy" />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <span>Error message</span>
+            </div>
+
+            <!-- submit section -->
+
+            <div class="btn input_control">
+              <button type="submit" id="submit">Submit</button>
+              <button type="reset" id="reset">Reset</button>
+              <span>Error message</span>
+            </div>
+            
+          </form>
+        </fieldset>
+      </div>
+    </section>
+    <script src="form.js"></script>
+  </body>
+</html>
